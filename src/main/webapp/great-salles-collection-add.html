@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="styles/great-movies-collection-styles.css" rel="stylesheet">
+    <title>Movie Time!</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="styles/logo.png" alt="Logo" style="width:80px;">
+    </a>
+    <div class="navbar-nav ml-auto">
+        <a class="nav-link" href="great-movies-collection.jsp">Visit Movies</a>
+        <a class="nav-link" href="logout">Deconnexion</a>
+    </div>
+</nav>
+<h1>Salles List - Add Salle</h1>
+<div class="app-container">
+    <form action="add-salle" method="post" name="addForm">
+
+        <label>
+            Salle ID:
+            <input minlength="1" name="id" type="number"/>
+        </label>
+
+        <label>
+            Salle name:
+            <input minlength="1" name="nom" type="text"/>
+        </label>
+
+        <label>
+            Salle capacity:
+            <input minlength="1" name="capacite" type="number"/>
+        </label>
+
+        <label>
+            Salle location:
+            <input minlength="1" name="localisation" type="text"/>
+        </label>
+
+        <input name="submit" type="submit" value="Add"/>
+        <input name="reset" type="reset" value="Reset"/>
+
+    </form>
+    <img src="styles/salle.jpg" width="700" height="300">
+
+</div>
+</body>
+</html>

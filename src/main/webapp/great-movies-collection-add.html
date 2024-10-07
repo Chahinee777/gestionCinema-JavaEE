@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="styles/great-movies-collection-styles.css" rel="stylesheet">
+    <title>Movie Time!</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="styles/logo.png" alt="Logo" style="width:80px;">
+    </a>
+    <div class="navbar-nav ml-auto">
+        <a class="nav-link" href="great-salles-collection.jsp">Visit Salles</a>
+        <a class="nav-link" href="logout">Deconnexion</a>
+    </div>
+</nav>
+<h1>List Movies - Add Movie</h1>
+<div class="app-container">
+    <form action="add-movie" method="post" name="addForm">
+        <label>
+            Movie title:
+            <input minlength="1" name="title" type="text"/>
+        </label>
+
+        <label>
+            Movie revenue:
+            <input minlength="1" name="revenue" type="number"/>
+        </label>
+
+        <input name="submit" type="submit" value="Add"/>
+        <input name="reset" type="reset" value="Reset"/>
+    </form>
+</div>
+<img src="styles/movies.jpg" width="700" height="300" style="display: block; margin-left: auto; margin-right: auto;"></body>
+</html>
